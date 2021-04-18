@@ -1,33 +1,33 @@
 To recompile python file again:
 
-Install latest version of python
+1. Install latest version of python
 
-Install venv package: 
-pip install virtualenv
+2. Install venv package: 
+   pip install virtualenv
 
-Create venv:
-virtualenv mypython (name of an empty directory)
+3. Create venv:
+   virtualenv mypython   (name of an empty directory)
 
-Activate venev:
-mypthon\Scripts\activate
+4. Activate venev:
+   mypthon\Scripts\activate
+  
+   To deactivate venv:
+   deactivate
 
-To deactivate venv:
-deactivate
+6. Install dependencies (whilst activated):
+   pip install tensorflow
+   pip install keras
+   pip install tk
+   pip install numpy
+   pip install pillow
+   pip install pyinstaller
 
-Install dependencies (whilst activated):
-pip install tensorflow
-pip install keras
-pip install tk
-pip install numpy
-pip install pillow
-pip install pyinstaller
+7. Add the path of the Scripts directory and Scripts/python.exe inside the mypython folder to the user environment variables
 
-Add the path to Scripts directory and Scripts/python.exe inside the mypython folder to the user environment variables
+8. Select the interpreter location in the text editor to the python.exe in the mypython/Scripts folder
 
-Select this interpreter in your text editor and run
+9. To bundle this into a single directory: 
+   pyinstaller --onedir --noconsole Classifier.py
 
-To bundle this into a single directory: 
-pyinstaller --onedir --noconsole Classifier.py
-
-
+10. Using inno installer the installer file was created
 
